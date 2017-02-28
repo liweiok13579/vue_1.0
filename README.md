@@ -381,8 +381,8 @@ v-html
 	Vue.elementDirective('zns-red',{
 	    bind:function(){
 	        this.el.style.background='red';
-	    }
-	});
+	    })
+	    
 ------------------------------------------------
 @keydown.up
 @keydown.enter
@@ -392,32 +392,39 @@ v-html
 自定义键盘信息:
 	Vue.directive('on').keyCodes.ctrl=17;
 	Vue.directive('on').keyCodes.myenter=13;
+	
 ------------------------------------------------
 监听数据变化:
 	vm.$el/$mount/$options/....
 
 	vm.$watch(name,fnCb);  //浅度
 	vm.$watch(name,fnCb,{deep:true});  //深度监视 
+	
 ------------------------------------------------
 vue组件:
 组件间各种通信
 slot
 vue-loader	webpack   .vue
 vue-router
+
 ------------------------------------------------3
 git page：
 	任何仓库 master分支，都可以发布(git page)
+	
 -------------------------------------
 双向过滤器:
 	Vue.filter(name,{
 		read:
 		write:
 	});
+	
 -------------------------------------
 1.0
 2.0
+
 -------------------------------------
 引入 vue.js
+
 -------------------------------------
 bower-> （前端）包管理器
 	npm install bower -g
@@ -428,6 +435,7 @@ bower uninstall <包名>
 bower info <包名>	查看包版本信息
 
 <script src="bower_components/vue/dist/vue.js"></script>
+
 -------------------------------------
 vue-> 过渡(动画)
 	本质走的css3: transtion ,animation
