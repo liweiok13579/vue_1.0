@@ -496,35 +496,13 @@ var vm=new Vue({
 			}
 		}
 	});
-	123
------------------------------------
-配合模板:
-	1. template:'<h2 @click="change">{{msg}}</h2>'
-
-	2. 单独放到某个地方
-		a). <script type="x-template" id="aaa">
-			<h2 @click="change">{{msg}}</h2>
-		</script>
-		b). <template id="aaa">
-			<h1></h1>
-			<ul>
-				<li v-for="val in arr">
-					{{val}}
-				</li>
-			</ul>
-		</template>
-		123
------------------------------------
 动态组件:
 	<component :is="组件名称"></component>
-	123
 --------------------------------------------
 vue-devtools	->  调试工具
 	https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
-	123
 --------------------------------------------
 vue默认情况下，子组件也没法访问父组件数据
-123
 --------------------------------------------
 组件数据传递:	√
 1. 子组件就想获取父组件data
@@ -544,22 +522,16 @@ vue默认情况下，子组件也没法访问父组件数据
 	vm.$emit(事件名,数据);
 
 	v-on:	@
-	123
---------------------------------------------
 vm.$dispatch(事件名,数据)	子级向父级发送数据
 vm.$broadcast(事件名,数据)	父级向子级广播数据
 	配合: event:{}
 
 	在vue2.0里面已经，报废了
-	123
---------------------------------------------
 slot:
 	位置、槽口
 	作用: 占个位置
 
 	类似ng里面 transclude  （指令）
-	123
---------------------------------------------
 vue-> SPA应用，单页面应用
 	vue-resouce	交互
 	vue-router	路由
@@ -611,7 +583,6 @@ js:
 		‘/’:'/home'
 	});
 	123
---------------------------------------
 路由嵌套(多层路由):
 	
 	主页	home
@@ -639,8 +610,6 @@ js:
 	{{$route.path}}	->  当前路径
 	
 	{{$route.query | json}}	->  数据
-	123
---------------------------------------------
 vue-loader:
 	其他loader ->  css-loader、url-loader、html-loader.....
 
@@ -677,8 +646,6 @@ b.vue
 		<script>
 			js	（平时代码、ES6）	babel-loader
 		</script>
-		123
--------------------------------------
 简单的目录结构:
 	|-index.html
 	|-main.js	入口文件
@@ -692,8 +659,6 @@ ES6: 模块化开发
 		export default {}
 	引入模块:
 		import 模块名 from 地址
-		123
---------------------------------------------
 webpak准备工作:
 	cnpm install webpack --save-dev
 	cnpm install webpack-dev-server --save-dev
@@ -713,14 +678,10 @@ webpak准备工作:
 	babel-runtime
 
 最最核心：
-123
---------------------------------------------4
 手动配置自己:
 	webpack+vue-loader
 
 	webpack加载模块
-	123
--------------------------------------
 如何运行此项目？
 	1. npm install	或者    cnpm install
 	2. npm run dev
@@ -737,11 +698,7 @@ EADDRINUSE	端口被占用
 少了:
 	webpack-dev-server
 	webpack
-	123
-----------------------------------------
 .vue 结尾，之后称呼组件
-123
-----------------------------------------
 路由:
 	vue-router
 
@@ -771,17 +728,11 @@ EADDRINUSE	端口被占用
 	App.vue	->   需要一个 <div id="app"></div>  根元素
 
 home	news
-123
----------------------------------------------
 路由嵌套:
 	和之前一模一样
-	123
---------------------------------------------
 上线:
 	npm run build
 		->	webpack -p
-		132
---------------------------------------------
 脚手架:
 	vue-cli——vue脚手架
 		帮你提供好基本项目结构
@@ -795,8 +746,6 @@ home	news
 
 	browserify	->  自己看
 	browserify-simple
-	123
---------------------------------------------
 基本使用流程:
 1. npm install vue-cli -g	安装 vue命令环境
 	验证安装ok?
@@ -808,4 +757,4 @@ home	news
 	npm install
 4. npm run dev
 --------------------------------------------	
-一版本已经结束，二版本又大换血了，不过还是有迹可循的。待2看完了在整理一下上传上来（123为换位符）
+一版本已经结束，二版本又大换血了，不过还是有迹可循的。待2看完了在整理一下上传上来
