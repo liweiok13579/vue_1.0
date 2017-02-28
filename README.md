@@ -499,14 +499,14 @@ var vm=new Vue({
 	123
 -----------------------------------
 配合模板:
-	1. template:'<h2 @click="change">标题2->{{msg}}</h2>'
+	1. template:'<h2 @click="change">{{msg}}</h2>'
 
 	2. 单独放到某个地方
 		a). <script type="x-template" id="aaa">
-			<h2 @click="change">标题2->{{msg}}</h2>
+			<h2 @click="change">{{msg}}</h2>
 		</script>
 		b). <template id="aaa">
-			<h1>标题1</h1>
+			<h1></h1>
 			<ul>
 				<li v-for="val in arr">
 					{{val}}
