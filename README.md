@@ -913,14 +913,14 @@ debounce	废弃
 
 vue动画
 vue路由
---------------------------------------
+
+
 transition 之前  属性
 <p transition="fade"></p>
 
 .fade-transition{}
 .fade-enter{}
 .fade-leave{}
---------------------------------------
 
 到2.0以后 transition 组件
 
@@ -945,7 +945,8 @@ class定义:
 		<p :key=""></p>
 		<p :key=""></p>
 	</transition-group>
-------------------------------------------
+
+
 vue2.0 路由:
 	http://router.vuejs.org/zh-cn/index.html
 基本使用:
@@ -956,10 +957,10 @@ vue2.0 路由:
 2. 路由具体写法
 	//组件
 	var Home={
-	    template:'<h3>我是主页</h3>'
+	    template:''
 	};
 	var News={
-	    template:'<h3>我是新闻</h3>'
+	    template:''
 	};
 
 	//配置路由
@@ -981,7 +982,8 @@ vue2.0 路由:
 3. 重定向
 	之前  router.rediect  废弃了
 	{path:'*', redirect:'/home'}
-------------------------------------------
+
+
 路由嵌套:
 	/user/username
 
@@ -996,21 +998,24 @@ vue2.0 路由:
 	    },
 	    {path:'*', redirect:'/home'}  //404
 	];
-------------------------------------------
-/user/strive/age/10
+	/user/strive/age/10
 
 :id
 :username
 :age
-------------------------------------------
+
+
 路由实例方法:
 	router.push({path:'home'});  //直接添加一个路由,表现切换路由，本质往历史记录里面添加一个
 	router.replace({path:'news'}) //替换路由，不会往历史记录里面添加
-------------------------------------------
+
+
 vue-cli
-------------------------------------------
+
+
 npm install
-------------------------------------------
+
+
 脚手架:  vue-loader
 	1.0  -> 
 	new Vue({
@@ -1022,10 +1027,11 @@ npm install
 	  el: '#app',
 	  render: h => h(App)
 	})
-------------------------------------------
+
+
 vue2.0 
 	vue-loader和vue-router配合
-------------------------------------------
+
 
 style-loader	css-loader
 
