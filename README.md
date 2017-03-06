@@ -100,7 +100,8 @@ bootstrap+vue简易留言板(todolist):
 		依赖jquery
 
 	确认删除？和确认删除全部么?
------------------------------------------
+
+
 事件:
 	v-on:click/mouseover......
 	
@@ -131,7 +132,8 @@ bootstrap+vue简易留言板(todolist):
 				@keyup/keydown.up
 				@keyup/keydown.down
 			.....
------------------------------------------
+
+
 属性:
 	v-bind:src=""
 		width/height/title....
@@ -141,7 +143,8 @@ bootstrap+vue简易留言板(todolist):
 
 	<img src="{{url}}" alt="">	效果能出来，但是会报一个404错误
 	<img v-bind:src="url" alt="">	效果可以出来，不会发404请求
------------------------------------------
+
+
 class和style:
 	:class=""	v-bind:class=""
 	:style=""	v-bind:style=""
@@ -156,19 +159,22 @@ class和style:
 		data:{
 			json:{red:a, blue:false}
 		}
-	--------------------------
+
+
 	style:
 	:style="[c]"
 	:style="[c,d]"
 		注意:  复合样式，采用驼峰命名法
 	:style="json"
------------------------------------------
+
+
 模板:
 	{{msg}}		数据更新模板变化
 	{{*msg}}	数据只绑定一次
 	
 	{{{msg}}}	HTML转意输出
------------------------------------------
+
+
 过滤器:-> 过滤模板数据
 	系统提供一些过滤器:
 	
@@ -184,7 +190,8 @@ class和style:
 	{{msg| filterA 参数}}
 
 	....
------------------------------------------
+
+
 交互:
 	$http	（ajax）
 
@@ -235,7 +242,8 @@ class和style:
 		});
 		
 https://www.baidu.com/s?wd=s
------------------------------------------ 2
+
+
 vue制作weibo
 	交互
 
@@ -251,7 +259,8 @@ vue->  1.0
 		method:'get'/post/jsonp
 		jsonp:'cb' //cbName
 	});
-----------------------------------
+
+
 vue事件:
 	@click=""
 数据:
@@ -261,8 +270,8 @@ vue事件:
 
 获取某一页数据:
 	getPageData(1);
-	123
-----------------------------------
+
+
 vue生命周期:
 	钩子函数:
 
@@ -273,15 +282,17 @@ vue生命周期:
 
 	beforeDestroy	->   销毁之前
 	destroyed	->   销毁之后
-----------------------------------
+
+
 用户会看到花括号标记:
 	
 	v-cloak		防止闪烁, 比较大段落
-----------------------------------
+	
+	
 <span>{{msg}}</span>		->   v-text
 {{{msg}}}			->   v-html
-123
-----------------------------------
+
+
 ng:  $scope.$watch
 
 计算属性的使用:
@@ -290,7 +301,8 @@ ng:  $scope.$watch
 			return 值
 		}
 	}
-	--------------------------
+	
+	
 	computed:{
 		b:{
 			get:
@@ -299,7 +311,8 @@ ng:  $scope.$watch
 	}
 
 	* computed里面可以放置一些业务逻辑代码，一定记得return
----------------------------------
+	
+	
 vue实例简单方法:
 	vm.$el	->  就是元素
 	vm.$data  ->  就是data
@@ -309,7 +322,8 @@ vue实例简单方法:
 	vm.$destroy	->   销毁对象
 
 	vm.$log();	->  查看现在数据的状态
----------------------------------
+	
+	
 循环：
 	v-for="value in data"
 
@@ -317,7 +331,8 @@ vue实例简单方法:
 	track-by='索引'	提高循环性能
 
 	track-by='$index/uid'
----------------------------------
+	
+	
 过滤器:
 	vue提供过滤器:
 		capitalize	uppercase	currency....
@@ -358,7 +373,8 @@ vue实例简单方法:
 	model -> view
 
 	view -> model
----------------------------------
+	
+	
 v-text
 v-for
 v-html
@@ -378,14 +394,16 @@ v-html
 	* 注意: 必须以 v-开头
 
 	拖拽:
-	-------------------------------
+
+
 自定义元素指令:（用处不大）
 	Vue.elementDirective('zns-red',{
 	    bind:function(){
 	        this.el.style.background='red';
 	    })
 	    
-------------------------------------------------
+
+
 @keydown.up
 @keydown.enter
 
@@ -395,25 +413,25 @@ v-html
 	Vue.directive('on').keyCodes.ctrl=17;
 	Vue.directive('on').keyCodes.myenter=13;
 	
-------------------------------------------------
+
+
 监听数据变化:
 	vm.$el/$mount/$options/....
 
 	vm.$watch(name,fnCb);  //浅度
 	vm.$watch(name,fnCb,{deep:true});  //深度监视 
 	
-------------------------------------------------
 vue组件:
 组件间各种通信
 slot
 vue-loader	webpack   .vue
 vue-router
 
-------------------------------------------------3
+
 git page：
 	任何仓库 master分支，都可以发布(git page)
 	
--------------------------------------
+	
 双向过滤器:
 	Vue.filter(name,{
 		read:
