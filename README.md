@@ -481,7 +481,7 @@ vue组件:
 定义一个组件:
 1. 全局组件
 var Aaa=Vue.extend({
-	template:'<h3>132465</h3>'
+	template:''
 });
 
 Vue.component('aaa',Aaa);
@@ -499,29 +499,33 @@ var vm=new Vue({
 		aaa:Aaa
 	}
 });
-123
---------------------------------------
+
+
+
 另一种编写方式:
 	Vue.component('my-aaa',{
-		template:'<strong>好</strong>'
+		template:''
 	});
 
 	var vm=new Vue({
 		el:'#box',
 		components:{
 			'my-aaa':{
-				template:'<h2>标题2</h2>'
+				template:''
 			}
 		}
 	});
 动态组件:
 	<component :is="组件名称"></component>
---------------------------------------------
+
+
 vue-devtools	->  调试工具
 	https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
---------------------------------------------
+
+
 vue默认情况下，子组件也没法访问父组件数据
---------------------------------------------
+
+
 组件数据传递:	√
 1. 子组件就想获取父组件data
 	在调用子组件：
