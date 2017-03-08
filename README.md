@@ -1131,17 +1131,20 @@ mint-ui
 	http://mint-ui.github.io/
 
 1. 下载
+
 	npm install mint-ui -S
 
 	-S
 	--save
 2. 引入
-	import Vue from 'vue';
-	import Mint from 'mint-ui';
-	import 'mint-ui/lib/style.css'
+
+	import  Vue from 'vue';
+	import  Mint from 'mint-ui';
+	import  'mint-ui/lib/style.css'
 	Vue.use(Mint);
 
 	按需引入:
+	
 	import { Cell, Checklist } from 'minu-ui';
 	Vue.component(Cell.name, Cell);
 	Vue.component(Checklist.name, Checklist);
